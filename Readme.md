@@ -96,7 +96,7 @@ export PATH=$PATH:$(go env GOPATH)/bin
 ***Check version***
 ```bash
  wails version
-``
+```
 
 <h2>For Ubuntu</h2>
 
