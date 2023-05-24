@@ -157,12 +157,13 @@ go install github.com/wailsapp/wails/v2/cmd/wails@latest
 ```bash
 export PATH=$PATH:$(go env GOPATH)/bin
 ```
-<p>Save the file by pressing Ctrl+O, then exit the text editor by pressing control+X</p>
+<p>Save the file by pressing Ctrl+O, then exit the text editor by pressing CTRL+X</p>
 
 ```bash
   source ~/.profile
 ```
 ***Check version***
+
 ```bash
  wails version
 ```
