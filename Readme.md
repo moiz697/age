@@ -78,7 +78,25 @@ go version
 go install github.com/wailsapp/wails/v2/cmd/wails@latest
 
 ```
+***Exporting Go Binary Directory to the PATH Environment Variable***
+```bash
+   nano ~/.profile
+```
 
+<p>Copy these commands and paste them in the end</p>
+
+```bash
+export PATH=$PATH:$(go env GOPATH)/bin
+```
+<p>Save the file by pressing Ctrl+O, then exit the text editor by pressing control+X</p>
+
+```bash
+  source ~/.profile
+```
+***Check version***
+```bash
+ wails version
+``
 
 <h2>For Ubuntu</h2>
 
@@ -124,7 +142,11 @@ export GOPATH=$HOME/go
 ```bash
   go version
 ```
+***Download Wails***
+```bash
+go install github.com/wailsapp/wails/v2/cmd/wails@latest
 
+```
 ***Exporting Go Binary Directory to the PATH Environment Variable***
 ```bash
    nano ~/.profile
