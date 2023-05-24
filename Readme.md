@@ -56,10 +56,39 @@ Visualize graph data generated using Apache AGE with Apache AGE Viewer applicati
 <h1>How to Run Backend and Frontend of Ageviewer Desktop</h1>
 
 <h2>For macOS</h2>
+ 
 
+     
 ***Download Go***
 ```bash
+
 curl -O https://dl.google.com/go/go1.18.6.darwin-amd64.pkg
+```
+***Install Go***
+```bash
+sudo installer -pkg go1.18.6.darwin-amd64.pkg -target /
+```
+***Check version***
+```bash
+go version
+```
+
+***Download Wails***
+```bash
+go install github.com/wailsapp/wails/v2/cmd/wails@latest
+
+```
+
+
+<h2>For Ubuntu</h2>
+
+
+***Download Go***
+
+```bash
+
+wget https://dl.google.com/go/go1.18.6.linux-amd64.tar.gz
+
 ```
 ***Install Go***
 ```bash
@@ -85,7 +114,7 @@ export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/go
 ```
 
-<h6>Save the file by pressing Ctrl+O, then exit the text editor by pressing control+X</h6>
+<p>Save the file by pressing Ctrl+O, then exit the text editor by pressing control+X</p>
 
 ```bash
   source ~/.profile
@@ -106,7 +135,7 @@ export GOPATH=$HOME/go
 ```bash
 export PATH=$PATH:$(go env GOPATH)/bin
 ```
-<h6>Save the file by pressing Ctrl+O, then exit the text editor by pressing control+X</h6>
+<p>Save the file by pressing Ctrl+O, then exit the text editor by pressing control+X</p>
 
 ```bash
   source ~/.profile
@@ -218,3 +247,4 @@ cd age-viewer/frontend
 ```bash 
 wails init
 ```
+
